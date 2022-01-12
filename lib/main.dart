@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:networking_in_flutter/parsing_json/json_parsing.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,9 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: SafeArea(
-        child: Text('Flutter'),
-      ),
+      home: JsonParsing()
     );
   }//
 }
